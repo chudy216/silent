@@ -1,0 +1,44 @@
+<!doctype html>
+<!-- Jęzkyk strony -->
+<html lang="pl">
+<head>
+    <!-- Polskie znaki -->
+<meta charset="UTF-8" />
+    <!-- Tytuł -->
+    <title>Mary Shepherd-Sunderland</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+    <body>
+        <header>
+            <!-- nazwa gry w lewym górnym rogu -->
+        <a href="index.html" class="logo">Silent Hill 2 Remake</a>
+            <!-- lista podstron w prawym górnym rogu -->
+            <ul>
+            <li><a href="index.html">Strona główna</a></li> 
+            <li><a href="james.html">Główny bohater</a></li> 
+			<li><a href="mary.html" class="active">Mary</a></li> 			
+            <li><a href="screenshoty.html">Screenshoty</a></li> 
+			<li><a href="quiz.html">Quiz</a></li> 						
+            </ul>
+        </header>
+    <section>
+        <!-- tło -->
+    <img src="mary.png" alt="obrazek tła, mary z silent Hill 2">
+    </section>
+        <!-- tekst poniżej -->
+    <div class="sec">
+        <h2>Mary Shepherd-Sunderland</h2>
+    <p>Jest fikcyją postacią i żoną głównego bohatera, Jamesa Sunderlanda. <br><br>Chociaż na początku gry wydaje się, że Mary zmarła na nieuleczalną chorobę, to jej postać odgrywa istotną rolę w fabule poprzez wysyłanie tajemniczych listów do Jamesa, co prowadzi go do mrocznego miasteczka Silent Hill.<br><br>
+Mary jest przedstawiona jako delikatna i troskliwa kobieta, której los porusza serce gracza. Jednak w miarę odkrywania historii gry, jej postać staje się coraz bardziej zagadkowa, a James musi zmierzyć się z własnymi demonami, aby poznać prawdę o jej śmierci i swojej roli w całym zdarzeniu.<br><br>	
+Mary Shepherd-Sunderland stanowi istotny element w tworzeniu napiętej atmosfery psychologicznego horroru w grze "Silent Hill 2". Jej postać kryje wiele tajemnic i sekretów, co dodaje głębi fabule i sprawia, że gracze zastanawiają się nad naturą rzeczywistości w świecie gry.</p>
+    </div>
+        <!-- funkcja przejścia -->
+        <script>
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            james.style.top = value * 1 + 'px';
+        })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+<!doctype html>
+<!-- Jęzkyk strony -->
+<html lang="pl">
+<head>
+    <!-- Polskie znaki -->
+<meta charset="UTF-8" />
+    <!-- Tytuł -->
+    <title>Quiz o Silent Hill</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+    <body>
+        <header>
+            <!-- nazwa gry w lewym górnym rogu -->
+        <a href="index.html" class="logo">Silent Hill 2 Remake</a>
+            <!-- lista podstron w prawym górnym rogu -->
+            <ul>
+            <li><a href="index.html">Strona główna</a></li> 
+            <li><a href="james.html">Główny bohater</a></li> 
+			<li><a href="mary.html">Mary</a></li> 			
+            <li><a href="screenshoty.html">Screenshoty</a></li> 
+			<li><a href="quiz.html" class="active">Quiz</a></li> 						
+            </ul>
+        </header>
+    <section>
+        <!-- tło -->
+    <img src="quiz.png" alt="obrazek tła">
+    </section>
+        <!-- tekst poniżej -->
+    <div class="sec">
+    <p id="correct"></p>
+	<button onclick="quiz()">Kliknij</button>
+    </div>
+        <!-- funkcja przejścia -->
+        <script>
+		const quotes = ["Jak nazywa się główny bohater?", "W którym roku powstała gra?"];
+		const answers = ["James", "2001"];
+		function quiz(){
+		const rand = getRandomInt(quotes.length);
+		let person = prompt(quotes[rand]);
+		if (person == answers[rand]){
+		document.getElementById("correct").innerHTML = "Brawo "+answers[rand]+" to poprawna odpowiedź!";
+		}
+		else{
+			document.getElementById("correct").innerHTML = "Niestety się pomyliłeś, poprawna odpowiedź to "+answers[rand];
+		}}
+		function getRandomInt(max) {
+			return Math.floor(Math.random() * max);
+		}
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            background.style.top = value * 1 + 'px';
+        })
+        </script>
+    </body>
+</html>
